@@ -53,23 +53,15 @@
 </div>
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <a href="https://lexis-studio.com"><h3 class="w3-center">Lexis Studio</h3></a>
-  <p class="w3-center">
-    <em>
-      Работаем для Вас с 2015 года и ждём наших<br/>
-      уважаемых постоянных и новых клиентов<br/>
-      на нашем новом официальном сайте <br/>
-      <a style="color:firebrick;background:yellow;padding:3px 7px;border-radius:5px" href="https://lexis-studio.com">lexis-studio.com</a>
-    </em>
-    
-  </p>
+  <a href="http://lexis.inf.ua"><h3 class="w3-center">Lexis Studio</h3></a>
   <div class="w3-row w3-padding-48">
     <div class="w3-col m3 w3-left">&nbsp;</div>
     <div class="w3-col m6 w3-left">
       <div style="text-align:center;padding:10px;border:solid 1px lightblue;border-radius:50px 45px 45px 0;box-shadow:0 0 25px lightblue">
         <em>
-          По прежнему держимся<br/>
-          нашего девиза:<br/>
+          Работаем для Вас с 2015 года
+          <!--По прежнему держимся<br/>-->
+          <!--нашего девиза:<br/>-->
           <div style="background:#e6f7ff;padding:3px;line-height:200%;border-radius:35px 35px 35px 0">
             Мы развиваем интернет бизнес потому,<br/>
             что мы любим интернет и это наш бизнес
@@ -216,7 +208,7 @@
         <hr/>
         <p><i class="fa fa-smile-o fa-fw w3-hover-text-black w3-xlarge w3-margin-right" aria-hidden="true"></i> Посетите наш официальный веб-сайт:</p>
         <hr/>
-        <i class="fa fa-link fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <b> Web-Site: </b> <a href="https://lexis-studio.com"> lexis-studio.com </a><br>
+        <i class="fa fa-link fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <b> Web-Site: </b> <a href="http://lexis.inf.ua"> lexis.inf.ua </a><br>
       </div>
       <p>&nbsp;</p>
       <!-- form action="#">
@@ -236,7 +228,6 @@
     </div>
   </div>
 </div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -249,54 +240,10 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <div class="w3-small w3-section">
-    Copyright &copy; 2015-<script>document.write('' + new Date().getFullYear())</script> LSD <a href="https://lexis-studio.com"><i class="fa fa-diamond" aria-hidden="true"> Lexis Studio Design</i></a>
+    Copyright &copy; 2015-<script>document.write('' + new Date().getFullYear())</script> LSD <a href="http://lexis.inf.ua"><i class="fa fa-diamond" aria-hidden="true"> Lexis Studio Design</i></a>
   </div>
 </footer>
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(50.45434012, 30.52756572);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfcxkm3QqFw74EXiTJPFNbhOGyc-nR64&callback=myMap"></script>
-<!-- To use this code, get an API key from Google. Read Me: https://www.w3schools.com/graphics/google_maps_basic.asp -->
+<script src="./js/script.js"></script>
 </body>
 </html>
 
