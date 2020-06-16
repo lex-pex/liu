@@ -1,33 +1,37 @@
+@import  url('./w3.css');
+@import  url('./fa/css/font-awesome.min.css');
+@import  url('./fa/font/lato/lato.css');
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  font-size:14px;
+  color:#444;
+  height: 100%;
+  line-height: 1.8;
 }
 
 /* Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First parallax (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../img/hands_bg.jpg');
-    min-height: 100%;
+  background-image: url('../img/hands_bg.jpg');
+  height:800px!important;
 }
 
-/* Second image (Portfolio) */
+/* Second parallax (Portfolio) */
 .bgimg-2 {
-    background-image: url('../img/model_bg.jpg');
-    min-height: 400px;
+  background-image: url('../img/model_bg.jpg');
+  min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third parallax (Contact) */
 .bgimg-3 {
     background-image: url('../img/main_bg.jpg');
     min-height: 400px;
@@ -41,9 +45,10 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
+/* Turn off parallax scrolling for tablets and phones
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+  }
 }
+*/
