@@ -1,6 +1,4 @@
 
-
-
 var script = document.createElement('script');
 script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfcxkm3QqFw74EXiTJPFNbhOGyc-nR64&callback=myMap";
 document.head.append(script);

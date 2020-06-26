@@ -12,28 +12,28 @@ body {
 }
 
 /* Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-greeting, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* First parallax (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('../img/hands_bg.jpg');
-  height:800px!important;
+/* Second parallax (Portfolio) */
+.bgimg-greeting {
+  background-image: url('../img/hands.png');
+  min-height: 700px;
 }
 
 /* Second parallax (Portfolio) */
 .bgimg-2 {
-  background-image: url('../img/model_bg.jpg');
+  background-image: url('../img/model_bg_sm.jpg');
   min-height: 400px;
 }
 
 /* Third parallax (Contact) */
 .bgimg-3 {
-    background-image: url('../img/main_bg.jpg');
+    background-image: url('../img/main_bg_sm.jpg');
     min-height: 400px;
 }
 
@@ -50,5 +50,5 @@ body {
   .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
   }
-}
-*/
+} */
+
